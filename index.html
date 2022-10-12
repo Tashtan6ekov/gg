@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ELAMAN</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="container">
+        <div>
+          <img
+            class="logo"
+            src="./images/Снимок экрана 2022-10-12 в 11.26.53 (1).svg"
+            alt="logo"
+          />
+        </div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Hire me</a>
+        </div>
+
+        <!-- burger start  -->
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle"> </label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#">home</a></li>
+            <li><a class="menu__item" href="#">Abot</a></li>
+            <li><a class="menu__item" href="#">Portfolio</a></li>
+            <li><a class="menu__item" href="#">Hire me</a></li>
+          </ul>
+        </div>
+        <!-- burger menu end -->
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <div class="container">
+        <div class="container-1">
+          <div class="dark__img">
+            <h3>Привет меня зовут <span> Эламан</span></h3>
+            <p>
+              Я начинающий frondend разработчик Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Perferendis magni suscipit ad
+              aperiam iste eaque quae perspiciatis harum mollitia deleniti.
+            </p>
+            <p></p>
+          </div>
+          <div class="img">
+            <img class="desc" src="./images/IMG_6595.JPG" width="400px" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main end -->
+    <!--  -->
+    <div class="desc-1">
+      <h1>Hobby</h1>
+    </div>
+    <div class="hobby">
+      <div class="stick">
+        <img src="./images/free-icon-ghost-2201755.png" />
+        <img src="./images/free-icon-smartphone-4611049.png" />
+        <img src="./images/free-icon-transparency-7842708.png" />
+        <img src="./images/free-icon-transparency-5307735.png" />
+      </div>
+    </div>
+    <div class="hobby__item">
+      <div class="hobby__item">
+        <p>Футбол</p>
+        <p>Читать мангу</p>
+        <p>Смотреть фильмы</p>
+        <p>Баскетбол</p>
+      </div>
+    </div>
+    <br />
+    <h2 class="skils">Skills</h2>
+    <!--  -->
+    <!-- section -->
+    <section>
+      <p>HTML</p>
+      <div class="container">
+        <div class="skills html">90%</div>
+      </div>
+
+      <p>CSS</p>
+      <div class="container">
+        <div class="skills css">80%</div>
+      </div>
+    </section>
+    <!-- section -->
+
+    <script>
+      document
+        .querySelector(".btn-menu")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".burger-menu")
+            .classList.add("burger-menu-active");
+          document.body.classList.add("overflow-hidden");
+        });
+
+      document
+        .querySelector(".btn-close-menu")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".menu")
+            .classList.toggle("burger-menu-active");
+          document.body.classList.toggle("overflow-hidden");
+        });
+    </script>
+  </body>
+</html>
